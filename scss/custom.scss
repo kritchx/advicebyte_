@@ -1,0 +1,69 @@
+$theme-colors: (
+  "primary": #26292b,
+  "danger": #36ffb2,
+  "light": #5f6b92
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.list-group-item-light {
+  color: #ffffff;
+  float: left;
+  background-color: #5f6b92;
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1.5px solid #535e80;
+}
+.border-custom {
+    color: #ffffff;
+    float: left;
+    background-color: #5f6b92;
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid #5f6b92;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+  }
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 0px;
+    background-color: #5f6b92;
+  }
+  .card-light{
+    background-color: #5f6b92;
+  }
+  .card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #5f6b92;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 10.25rem;
+  }
+.text-rank-format-1 { 
+    font-weight: bold;
+    font-size: 14px;
+}
+.seemore { 
+    padding: 0.75rem 1.25rem;
+    color: rgba(226, 226, 226, 0.849);
+    font-size: 14px;
+}
+.text-rank-format-2 { 
+    font-size: 12px;
+    float: left;
+}
+.my_div {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+}
+.boxspace-card { 
+    padding-bottom: 2rem;
+}
+
+
+
+
