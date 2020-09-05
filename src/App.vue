@@ -1,83 +1,104 @@
 <template>
-  <div id="app">
+  <div id="app" class="bg-custom">
     <!-- navbar -->
-    <nav class="shadow-sm p-3 mb-5 bg-white rounded navbar navbar-expand-lg navbar-light bg-light">
+    <nav
+      class="d-flex bd-highlight shadow-sm p-3 mb-5 bg-white rounded navbar navbar-expand-lg navbar-light bg-light"
+    >
       <div class>
         <a class="navbar-brand" href="#">
           <div class="navbnd">AdviceByte</div>
         </a>
       </div>
-      <div class="spacenav">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" href="#">
-              Menu 0
-              <span class="sr-only">(current)</span>
-            </a>
-            <a class="nav-link" href="#">Menu 1</a>
-            <!-- <a class="nav-link" href="#">Menu 2</a> -->
-            <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Menu 3</a> -->
-          </div>
-        </div>
-      </div>
     </nav>
     <!-- content -->
     <div class="container-fluid">
-      <div class="container">
-        <div class="my_div"></div>
-        <button class="btn btn-primary">This is test primary</button>
-        <button class="btn btn-danger">This is test danger</button>
-      </div>
+      <div class="container"></div>
       <div class="row">
         <!-- first col -->
-        <div class="col-md-3">One of three columns</div>
-        <!-- sec (Center) col -->
-        <div class="col-md-6">
-          <div class="container">One of three columns</div>
+        <div class="col-md-3">One of three columns
+
+          <div class="container">
+  <div class="card-nav">
+    <div class="">
+      <h3>  <i class="fas fa-angle-down iconM"></i></h3>
+    </div>
+    <div class="body">
+      <ul>
+        <li><i class="fas fa-home icon"></i> Home</li>
+        <li><i class="fas fa-underline icon"></i> mission</li>
+  
+        <li><i class="fas fa-chart-pie icon"></i> </li>
+      </ul>
+    </div>
+  </div>
+</div>
         </div>
+        <!-- sec (Center) col -->
+        <div class="col-md-6 d-flex flex-column bd-highlight mb-3">
+          <div class="container p-2 bd-highlight">
+            <div class="content-bg bg-white">
+              <!-- content background box -->
+            <div class="shadow-sm p-3 mb-5 bg-white rounded">
+              <div class="row justify-content-md-center">
+                <div class="navigator-font col-md-3">Profile</div>
+                <div class="navigator-font col-md-3">History</div>
+                <div class="navigator-font col-md-3">Stat</div>
+              </div>
+            </div>
+            <div class="content-box">
+              <!-- content box -->
+              <div class="">
+              one of three
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- third col -->
         <div class="col-md-3">
           <!-- ranking card list -->
           <div class="card" style="width: 18rem;">
-            <div class="card-header">
+            <div class="border-custom-up">
               <p class="cardhd">Weekly Ranking</p>
             </div>
-            <!-- ลำดับรายชื่อ Ranking -->
-            <ul class="list-group list-group-flush">
-              <!-- <div class="row"> -->
-              <li class="list-group-item-light">
-                <div class="text-rank-format-1">One of Ranking</div>
-                <!-- </div>   -->
-              </li>
-              <li class="list-group-item-light">
-                <div class="text-rank-format-1">One of Ranking</div>
-                <!-- </div>   -->
-              </li>
-              <li class="list-group-item-light">
-                <div class="text-rank-format-1">One of Ranking</div>
-                <!-- </div>   -->
-              </li>
-              <li class="list-group-item-light">
-                <div class="text-rank-format-1">One of Ranking</div>
-                <!-- </div>   -->
-              </li>
-              <li class="list-group-item-light border-custom">
-                <a href="#" class="seemore">Show more</a>
-              </li>
-            </ul>
+            <table class="table table-hover table-light">
+              <tbody>
+                <tr>
+                  <th scope="row" class="font-custom-list">1</th>
+                  <td class>
+                    <img src="./image/1.jpg" alt class="rounded-circle" />
+                  </td>
+                  <td class="font-custom-list">Kritchagamol</td>
+                  <td class="font-custom-list">isus</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="border-custom">
+              <a href="#" class="seemore">See more</a>
+            </div>
           </div>
           <div class="boxspace-card"></div>
+          <!-- เว้นบรรทัด -->
+          <div class="card" style="width: 18rem;">
+            <div class="border-custom-up">
+              <p class="cardhd">Daily Mission</p>
+            </div>
+            <table class="table table-hover table-light" style="width: 18rem;">
+              <tbody class="d-flex bd-highlight">
+                <tr>
+                  <th scope="row" class="font-mission">[Daily]</th>
+                  <td class="text-left font-custom-list p-2 flex-fill bd-highlight">
+                    Example Mission With Something
+                    <p class="mission-detail">fake detail</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="border-custom">
+              <a href="#" class="seemore">See more</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -96,6 +117,28 @@
   margin-left: 20%;
   margin-right: 5%;
 }
+.navigator-font {
+  padding: 0.25rem;
+  font-family: poppins;
+  font-size: 14px;
+  font-weight: bold;
+  color: #a3aac1;
+}
+.content-bg { 
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+.content-box { 
+  padding: 2rem;
+  padding-bottom: 4rem;
+}
+.navigator-font-active {
+  padding: 0.75rem;
+  font-family: poppins;
+  font-size: 12px;
+  font-weight: bold;
+  color: #828ba9;
+}
 .spacenav {
   /* ระยะ margin padding ห่างระหว่างโลโก้กับเมนู */
   margin-left: 30px;
@@ -104,15 +147,35 @@
 .cardhd {
   float: left;
   font-weight: bold;
-  font-size: 18px;
+  font-family: Poppins;
+  padding-top: 1rem;
+  font-size: 16px;
   color: white;
+}
+.mission-detail {
+  font-family: Poppins;
+  font-size: 12px;
+  color: #e4e4e4a1;
+}
+.font-custom-list {
+  align-self: center;
+  font-family: Poppins;
+  padding-top: 10px;
+  color: white;
+  font-size: 12px;
+}
+.font-mission {
+  font-family: Poppins;
+  color: #ffaa00;
+  font-size: 12px;
 }
 #card-header {
   border-radius: 100px;
 }
 /* ------------------------------------------------------- */
 html {
-  height: 200%;
+  height: 140%;
+  background-color: #e4e4e4;
 }
 #app {
   color: #2c3e50;
